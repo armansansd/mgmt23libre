@@ -1,0 +1,7 @@
+#column{
+	width: 30%;
+	float: left;
+	margin: 0 0 0 5px;
+	padding: 10px;
+	background: rgba(125,125,125,0.2);
+}

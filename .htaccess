@@ -1,0 +1,4 @@
+Options +Indexes +MultiViews +FollowSymlinks 
+ <ifModule mod_php4.c>
+ php_value zlib.output_compression 16386
+</ifModule>
