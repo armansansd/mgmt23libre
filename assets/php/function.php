@@ -26,7 +26,7 @@ function lsfolder($dir){
     echo '<ul class="lsfolder">';
     foreach($ffs as $ff){
         if($ff != '.' && $ff != '..'){
-            echo '<li class="folder"><a href="'.URL.'\/data/'.$ff.'">'.$ff;
+            echo '<li class="folder"><a href="http://'.URL.'/data/'.$ff.'">'.$ff;
             //recursif
             // if(is_dir($dir.'/'.$ff)) lsfolder($dir.'/'.$ff);
             echo '</a></li>';

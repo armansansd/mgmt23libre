@@ -1,4 +1,4 @@
-Options +Indexes +MultiViews +FollowSymlinks 
- <ifModule mod_php4.c>
- php_value zlib.output_compression 16386
-</ifModule>
+AuthUserFile /home/armansan/www/.htpasswd
+AuthName "Acces protege"
+AuthType Basic
+Require valid-user
