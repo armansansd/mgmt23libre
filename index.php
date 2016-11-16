@@ -12,19 +12,31 @@
 	<script src="assets/js/function.js"></script>
 </head>
 <body>
+	<?php require('config.php'); ?>
+	<?php require('assets/php/function.php'); ?>
 	<div id="column">
 		<h2>Fichiers Partagés</h2>
 		<div class="lsdoc">
-			
+			<?php
+				$dir = LOCAL_PATH."/data";
+				lsfolder($dir) 
+			?>
 		</div>
-		<form action="" class="addfiles"></form>
+		<form action="" class="addfiles">
+			<label for="">folder</label>
+			<br/>
+			<input type="text" name="folder" id="">
+			<br/>
+			<label for="">files</label>
+			<input type="file" name="files" id="">
+		</form>
 	</div>
 	<div id="column">
 		<h2>Framapad(s)</h2>
 		<div class="padliste">
 		</div>
 		<label><input type="text" name="pad" id="pad" /> <b id="addPad">+</b></label>
-		nb : les pads sont mensuel.
+		<br /><i>nb : les pads sont mensuels.</i>
 	</div>
 	<div id="column">
 		<h2>
